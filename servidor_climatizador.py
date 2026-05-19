@@ -193,6 +193,16 @@ class Climatizador:
                 f"Umidade relativa: {self.umidade_relativa:.1f}%")
 
     # -------------------------------------------------------------------------
+    # MÉTODO ping
+    # -------------------------------------------------------------------------
+    # Método simples para o cliente verificar se este servidor está online.
+    # O cliente chama ping() e, se receber "pong" de volta, a conexão está funcionando.
+    # -------------------------------------------------------------------------
+    def ping(self):
+        # Retorna a string "pong" como sinal de que o servidor está ativo e respondendo
+        return "pong"
+
+    # -------------------------------------------------------------------------
     # MÉTODO obter_relatorio
     # -------------------------------------------------------------------------
     # Retorna um dicionário com todas as informações atuais do climatizador.

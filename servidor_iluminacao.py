@@ -200,6 +200,16 @@ class PainelIluminacao:
             return f"❌ Espectro '{cor}' inválido! Opções disponíveis: {cores_disponiveis}"
 
     # -------------------------------------------------------------------------
+    # MÉTODO ping
+    # -------------------------------------------------------------------------
+    # Método simples para o cliente verificar se este servidor está online.
+    # O cliente chama ping() e, se receber "pong" de volta, sabe que a conexão funciona.
+    # -------------------------------------------------------------------------
+    def ping(self):
+        # Retorna a string "pong" como sinal de que o servidor está ativo
+        return "pong"
+
+    # -------------------------------------------------------------------------
     # MÉTODO obter_relatorio
     # -------------------------------------------------------------------------
     # Gera e retorna um dicionário com todas as informações atuais do painel.

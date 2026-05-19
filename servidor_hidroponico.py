@@ -159,6 +159,19 @@ class SetorHidroponico:
         return f"💧 Nível de água: {status}"
 
     # -------------------------------------------------------------------------
+    # MÉTODO ping
+    # -------------------------------------------------------------------------
+    # Método simples usado pelo cliente para TESTAR se este servidor está online.
+    # Funciona como um "alô, está me ouvindo?" pela rede.
+    # Se o servidor responder, a conexão está funcionando.
+    # Não recebe parâmetros e retorna apenas a string "pong".
+    # -------------------------------------------------------------------------
+    def ping(self):
+        # Retorna "pong" — resposta padrão de teste de conectividade
+        # (Assim como no jogo de ping-pong: cliente envia "ping", servidor devolve "pong")
+        return "pong"
+
+    # -------------------------------------------------------------------------
     # MÉTODO obter_relatorio
     # -------------------------------------------------------------------------
     # Este método é especial: ele é chamado pelo cliente quando quer o RELATÓRIO GERAL.

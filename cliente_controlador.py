@@ -197,11 +197,12 @@ def conectar_servidor(ip, porta, nome):
         # f"http://{ip}:{porta}" → monta a URL do servidor, ex: "http://192.168.1.101:8001"
         proxy = xmlrpc.client.ServerProxy(f"http://{ip}:{porta}", allow_none=True)
 
-        # Testa a conexão chamando um método simples (system.listMethods é embutido no RPC)
-        # Se o servidor estiver offline, isso vai gerar um erro e cair no "except"
-        proxy.system.listMethods()
+        # Testa a conexão chamando o método "ping()" definido nos servidores
+        # Se o servidor estiver offline ou inacessível, vai gerar um erro e cair no "except"
+        # Isso é melhor que "system.listMethods" porque é um método que nós mesmos criamos
+        proxy.ping()
 
-        # Se chegou aqui, a conexão funcionou!
+        # Se chegou aqui sem erro, a conexão funcionou!
         print(f"  ✅ Conectado ao servidor: {nome} ({ip}:{porta})")
 
         # Retorna o proxy para ser usado posteriormente
