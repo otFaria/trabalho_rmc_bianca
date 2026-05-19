@@ -37,17 +37,17 @@ import sys
 
 # IP e porta do servidor hidropônico (máquina 1)
 # Altere "192.168.1.101" para o IP real do computador do setor hidropônico
-IP_HIDROPONICO  = "172.22.112.1"
+IP_HIDROPONICO  = "172.30.0.108"
 PORTA_HIDROPONICO = 8001
 
 # IP e porta do servidor de iluminação UV (máquina 2)
 # Altere "192.168.1.102" para o IP real do computador do painel de iluminação
-IP_ILUMINACAO = "172.19.32.1"
+IP_ILUMINACAO = "172.30.0.110"
 PORTA_ILUMINACAO = 8002
 
 # IP e porta do servidor do climatizador (máquina 3)
 # Altere "192.168.1.103" para o IP real do computador do climatizador
-IP_CLIMATIZADOR = "172.25.4.47"
+IP_CLIMATIZADOR = "172.30.0.209"
 PORTA_CLIMATIZADOR = 8003
 
 
