@@ -11,19 +11,19 @@
 #
 # Procure a linha "Endereço IPv4". Anote o IP de cada máquina.
 # Exemplo:
-#   Máquina 1 (Hidropônico):  192.168.1.101
-#   Máquina 2 (Iluminação):   192.168.1.102
-#   Máquina 3 (Climatizador): 192.168.1.103
-#   Máquina 4 (Cliente):      192.168.1.104
+#   Máquina 1 (Hidropônico):  172.22.112.1 (Maquina L7-M28)
+#   Máquina 2 (Iluminação):   172.19.32.1 (Maquina L7-M29)
+#   Máquina 3 (Climatizador): 172.25.4.47 (Joao)
+#   Máquina 4 (Cliente):      172.25.4.45 (Otavio)
 #
 #
 # PASSO 2 — Editar os IPs no arquivo do cliente
 # -----------------------------------------------
 # Abra o arquivo "cliente_controlador.py" e altere as linhas:
 #
-#   IP_HIDROPONICO  = "192.168.1.101"   ← IP da máquina 1
-#   IP_ILUMINACAO   = "192.168.1.102"   ← IP da máquina 2
-#   IP_CLIMATIZADOR = "192.168.1.103"   ← IP da máquina 3
+#   IP_HIDROPONICO  = "172.22.112.1"   ← IP da máquina 1
+#   IP_ILUMINACAO   = "172.19.32.1"   ← IP da máquina 2
+#   IP_CLIMATIZADOR = "172.25.4.47"   ← IP da máquina 3
 #
 #
 # PASSO 3 — Iniciar os servidores (cada um em sua máquina)
